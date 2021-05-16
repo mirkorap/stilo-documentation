@@ -1,0 +1,29 @@
+<div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
+  <div class="flex flex-col w-full md:w-64 text-gray-700 bg-white flex-shrink-0">
+    <div class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between">
+      <a
+        class="
+          text-lg
+          font-semibold
+          tracking-widest
+          text-gray-900
+          uppercase
+          rounded-lg
+          focus:outline-none
+          focus:shadow-outline
+        "
+      >
+        Stilo
+      </a>
+      <button class="rounded-lg md:hidden rounded-lg focus:outline-none focus:shadow-outline" (click)="toggle()">
+        <img *ngIf="!opened" src="assets/media/icons/menu.svg" class="w-6 h-6" />
+        <img *ngIf="opened" src="assets/media/icons/close.svg" class="w-6 h-6" />
+      </button>
+    </div>
+    <nav class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto" [class]="{ block: opened, hidden: !opened }">
+      <ul>
+        <app-sidenav-item *ngFor="let item of sidenavItems" [sidenavItem]="item"></app-sidenav-item>
+      </ul>
+    </nav>
+  </div>
+</div>
