@@ -15,7 +15,7 @@ export class SidenavComponent {
       children: [
         {
           title: 'Installation',
-          link: '/installation'
+          link: '/docs/installation'
         },
         {
           title: 'Release Notes',
@@ -29,7 +29,7 @@ export class SidenavComponent {
       children: [
         {
           title: 'Spacing Scale',
-          link: '/spacing-scale'
+          link: '/docs/spacing-scale'
         }
       ]
     },
@@ -38,11 +38,11 @@ export class SidenavComponent {
       children: [
         {
           title: 'Elevation',
-          link: '/elevation'
+          link: '/docs/elevation'
         },
         {
           title: 'Positioned',
-          link: '/positioned'
+          link: '/docs/positioned'
         }
       ]
     },
@@ -51,7 +51,7 @@ export class SidenavComponent {
       children: [
         {
           title: 'Gap',
-          link: '/grid-gap'
+          link: '/docs/grid-gap'
         }
       ]
     },
@@ -60,11 +60,11 @@ export class SidenavComponent {
       children: [
         {
           title: 'Edge',
-          link: '/edge'
+          link: '/docs/edge'
         },
         {
           title: 'Space Between',
-          link: '/spacing'
+          link: '/docs/spacing'
         }
       ]
     },
@@ -73,11 +73,11 @@ export class SidenavComponent {
       children: [
         {
           title: 'Height',
-          link: '/height'
+          link: '/docs/height'
         },
         {
           title: 'Width',
-          link: '/width'
+          link: '/docs/width'
         }
       ]
     },
@@ -86,19 +86,19 @@ export class SidenavComponent {
       children: [
         {
           title: 'Font Size',
-          link: '/font-size'
+          link: '/docs/font-size'
         },
         {
           title: 'Font Weight',
-          link: '/font-weight'
+          link: '/docs/font-weight'
         },
         {
           title: 'Letter Spacing',
-          link: '/letter-spacing'
+          link: '/docs/letter-spacing'
         },
         {
           title: 'Line Height',
-          link: '/line-height'
+          link: '/docs/line-height'
         }
       ]
     },
@@ -107,11 +107,11 @@ export class SidenavComponent {
       children: [
         {
           title: 'Color',
-          link: '/color'
+          link: '/docs/color'
         },
         {
           title: 'Color Opacity',
-          link: '/color-opacity'
+          link: '/docs/color-opacity'
         }
       ]
     },
@@ -120,15 +120,15 @@ export class SidenavComponent {
       children: [
         {
           title: 'Border',
-          link: '/border'
+          link: '/docs/border'
         },
         {
           title: 'Border Radius',
-          link: '/border-radius'
+          link: '/docs/border-radius'
         },
         {
           title: 'Divider',
-          link: '/divider'
+          link: '/docs/divider'
         }
       ]
     },
@@ -137,11 +137,11 @@ export class SidenavComponent {
       children: [
         {
           title: 'Box Shadow',
-          link: '/box-shadow'
+          link: '/docs/box-shadow'
         },
         {
           title: 'Opacity',
-          link: '/opacity'
+          link: '/docs/opacity'
         }
       ]
     },
@@ -150,7 +150,7 @@ export class SidenavComponent {
       children: [
         {
           title: 'Duration',
-          link: '/duration'
+          link: '/docs/duration'
         }
       ]
     },
@@ -159,15 +159,15 @@ export class SidenavComponent {
       children: [
         {
           title: 'Rotate',
-          link: '/rotate'
+          link: '/docs/rotate'
         },
         {
           title: 'Scale',
-          link: '/scale'
+          link: '/docs/scale'
         },
         {
           title: 'Translate',
-          link: '/translate'
+          link: '/docs/translate'
         }
       ]
     }
