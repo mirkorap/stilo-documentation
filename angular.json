@@ -5,6 +5,9 @@
       "component": {
         "changeDetection": "OnPush"
       }
+    },
+    "@schematics/angular:component": {
+      "skipTests": true
     }
   },
   "version": 1,
