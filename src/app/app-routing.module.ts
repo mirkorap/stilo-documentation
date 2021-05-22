@@ -12,7 +12,7 @@ const routes: Routes = [
       },
       {
         path: 'spacing-scale',
-        component: fromPages.SpacingPageComponent
+        component: fromPages.SpacingScalePageComponent
       },
       {
         path: 'elevation',
