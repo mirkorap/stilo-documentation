@@ -12,6 +12,7 @@ import { NgModule } from '@angular/core';
     fromComponents.SidenavComponent,
     fromComponents.SidenavItemComponent,
     fromComponents.CodeSnippetComponent,
+    fromComponents.HintBoxComponent,
     fromPages.InstallationPageComponent,
     fromPages.SpacingScalePageComponent,
     fromPages.ElevationPageComponent,
