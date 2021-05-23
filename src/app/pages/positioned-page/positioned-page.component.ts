@@ -68,7 +68,7 @@ export class PositionedPageComponent implements OnInit {
     this.rows = this.config.flatMap((value) => {
       return this.positionTypes.map((positionType) => {
         const size = value * SPACING_SCALE_UNIT;
-        const name = positionType.name + size;
+        const name = positionType.name + value;
         const position = positionType.position.replace(/X/g, size.toString());
         return { name, position };
       });
