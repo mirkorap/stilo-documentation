@@ -10,6 +10,7 @@
       [routerLink]="child.link"
       [routerLinkActive]="'bg-green-50 text-green-700'"
       [routerLinkActiveOptions]="{ exact: true }"
+      (click)="onLinkClick()"
     >
       {{ child.title }}
     </a>

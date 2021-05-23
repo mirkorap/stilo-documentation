@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { SidenavItem } from '@app/models/sidenav.model';
 
 @Component({
@@ -9,4 +9,9 @@ import { SidenavItem } from '@app/models/sidenav.model';
 })
 export class SidenavItemComponent {
   @Input() sidenavItem!: SidenavItem;
+  @Output() sidenavItemClick = new EventEmitter<void>();
+
+  onLinkClick(): void {
+    this.sidenavItemClick.emit();
+  }
 }

@@ -1,5 +1,5 @@
-<div class="md:flex flex-col md:flex-row md:min-h-screen w-full pb-8">
-  <div class="flex flex-col w-full md:w-64 text-gray-700 bg-white flex-shrink-0">
+<div class="w-full sm:w-64 absolute sm:relative bg-gray-800 shadow sm:h-full flex-col justify-between sm:flex">
+  <div class="flex flex-col w-full sm:w-64 text-gray-700 bg-white flex-shrink-0">
     <div class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between border-b">
       <a
         href="#"
@@ -16,16 +16,19 @@
       >
         Stilo
       </a>
-      <button class="rounded-lg md:hidden rounded-lg focus:outline-none focus:shadow-outline" (click)="toggle()">
+      <button class="rounded-lg sm:hidden rounded-lg focus:outline-none focus:shadow-outline" (click)="toggle()">
         <img *ngIf="!opened" src="assets/media/icons/menu.svg" class="w-6 h-6" />
         <img *ngIf="opened" src="assets/media/icons/close.svg" class="w-6 h-6" />
       </button>
     </div>
-    <nav class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto" [class]="{ block: opened, hidden: !opened }">
+    <nav class="flex-grow sm:block px-4 pb-4 sm:pb-0 sm:overflow-y-auto" [class]="{ block: opened, hidden: !opened }">
       <ul>
-        <app-sidenav-item *ngFor="let item of sidenavItems" [sidenavItem]="item"></app-sidenav-item>
+        <app-sidenav-item
+          *ngFor="let item of sidenavItems"
+          [sidenavItem]="item"
+          (sidenavItemClick)="toggle()"
+        ></app-sidenav-item>
       </ul>
     </nav>
   </div>
-  <router-outlet></router-outlet>
 </div>
