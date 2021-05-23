@@ -1,1 +1,31 @@
-<p>elevation-page works!</p>
+<div class="min-w-0 w-full flex-auto lg:static lg:max-h-full lg:overflow-visible">
+  <div class="w-full flex">
+    <div class="min-w-0 flex-auto px-4 sm:px-6 xl:px-8 pt-10 pb-24 lg:pb-16">
+      <div>
+        <div class="pb-10 border-b border-gray-200 mb-10">
+          <h1 class="inline-block text-3xl font-extrabold text-gray-900 tracking-tight">Elevation</h1>
+        </div>
+        <p class="mt-1 text-lg text-gray-900">
+          Utilities for controlling the size of the shadow below the material and the opacity of the elevation overlay
+          color if it is applied.
+        </p>
+
+        <app-hint-box>
+          <div>
+            The elevation constants are defined inside
+            <span class="font-semibold italic">StiloElevation</span>
+          </div>
+        </app-hint-box>
+      </div>
+
+      <div>
+        <app-table [columns]="columns" [rows]="rows"></app-table>
+
+        <div class="mt-10">
+          <h1 class="inline-block text-lg font-extrabold text-gray-900 tracking-tight">Usage Example</h1>
+        </div>
+        <app-code-snippet [codeSnippet]="usageExample.trim()"></app-code-snippet>
+      </div>
+    </div>
+  </div>
+</div>
