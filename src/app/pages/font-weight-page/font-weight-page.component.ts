@@ -7,7 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FontWeightPageComponent {
-  config: number[] = [];
   columns: string[] = ['name', 'weight'];
   rows: { [key: string]: any }[] = [
     {

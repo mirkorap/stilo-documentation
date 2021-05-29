@@ -7,7 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LetterSpacingPageComponent {
-  config: number[] = [];
   columns: string[] = ['name', 'spacing'];
   rows: { [key: string]: any }[] = [
     {

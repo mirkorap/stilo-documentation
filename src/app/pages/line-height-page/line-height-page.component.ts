@@ -7,7 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LineHeightPageComponent {
-  config: number[] = [];
   columns: string[] = ['name', 'height'];
   rows: { [key: string]: any }[] = [
     {

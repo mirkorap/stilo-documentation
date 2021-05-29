@@ -7,7 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FontSizePageComponent {
-  config: number[] = [];
   columns: string[] = ['name', 'fontsize'];
   rows: { [key: string]: any }[] = [
     {
