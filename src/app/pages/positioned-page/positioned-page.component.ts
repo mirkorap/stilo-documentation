@@ -15,31 +15,31 @@ export class PositionedPageComponent implements OnInit {
   positionTypes: { name: string; position: string }[] = [
     {
       name: 'inset',
-      position: 'top: X; right: X; bottom: X; left: X'
+      position: 'top: Xpx; right: Xpx; bottom: Xpx; left: Xpx'
     },
     {
       name: 'insetY',
-      position: 'top: X; bottom: X'
+      position: 'top: Xpx; bottom: Xpx'
     },
     {
       name: 'insetX',
-      position: 'right: X; left: X'
+      position: 'right: Xpx; left: Xpx'
     },
     {
       name: 'top',
-      position: 'top: X'
+      position: 'top: Xpx'
     },
     {
       name: 'right',
-      position: 'right: X'
+      position: 'right: Xpx'
     },
     {
       name: 'bottom',
-      position: 'bottom: X'
+      position: 'bottom: Xpx'
     },
     {
       name: 'left',
-      position: 'left: X'
+      position: 'left: Xpx'
     }
   ];
   usageExample = `
