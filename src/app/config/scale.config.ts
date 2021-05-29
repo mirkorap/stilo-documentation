@@ -13,3 +13,5 @@ export const ELEVATION_SCALE_CONFIG = [0, 10, 20, 30, 40, 50];
 export const COLOR_OPACITY_SCALE_CONFIG = [0, 5, 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 95, 100];
 
 export const BORDER_SCALE_CONFIG = [0, 2, 4, 6, 8, 10];
+
+export const DIVIDER_SCALE_CONFIG = [0, 2, 4, 6, 8, 10];
