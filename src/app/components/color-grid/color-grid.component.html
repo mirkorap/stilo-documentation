@@ -1,4 +1,14 @@
-<div class="grid grid-cols-1 gap-8">
+<div
+  class="
+    grid grid-cols-1
+    gap-8
+    px-5
+    overflow-y-auto
+    scrollbar-w-2 scrollbar-track-gray-lighter scrollbar-thumb-rounded scrollbar-thumb-gray
+    lg:max-h-sm
+    max-h-screen
+  "
+>
   <div *ngFor="let name of colorNames">
     <div class="flex flex-col space-y-3 sm:flex-row text-xs sm:space-y-0 sm:space-x-4">
       <div class="w-32 flex-shrink-0">
