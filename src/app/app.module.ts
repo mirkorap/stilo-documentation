@@ -12,6 +12,7 @@ import { NgModule } from '@angular/core';
     fromComponents.SidenavComponent,
     fromComponents.SidenavItemComponent,
     fromComponents.CodeSnippetComponent,
+    fromComponents.ColorGridComponent,
     fromComponents.HintBoxComponent,
     fromComponents.TableComponent,
     fromPages.InstallationPageComponent,
