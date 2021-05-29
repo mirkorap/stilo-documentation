@@ -1,1 +1,22 @@
-<p>box-shadow-page works!</p>
+<div>
+  <div class="pb-10 border-b border-gray-200 mb-10">
+    <h1 class="inline-block text-3xl font-extrabold text-gray-900 tracking-tight">Box Shadow</h1>
+  </div>
+  <p class="mt-1 text-lg text-gray-900">Utilities for controlling the box shadow of a box widget.</p>
+
+  <app-hint-box>
+    <div>
+      The box shadow constants are defined inside
+      <span class="font-semibold italic">StiloBoxShadow</span>
+    </div>
+  </app-hint-box>
+</div>
+
+<div>
+  <app-table [columns]="columns" [rows]="rows"></app-table>
+
+  <div class="mt-10">
+    <h1 class="inline-block text-lg font-extrabold text-gray-900 tracking-tight">Usage Example</h1>
+  </div>
+  <app-code-snippet [codeSnippet]="usageExample.trim()"></app-code-snippet>
+</div>
