@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
-import { ROTATE_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
+import { ROTATION_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 
 @Component({
   selector: 'app-rotate-page',
   templateUrl: './rotate-page.component.html',
   styleUrls: ['./rotate-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [{ provide: SCALE_CONFIG, useValue: ROTATE_SCALE_CONFIG }]
+  providers: [{ provide: SCALE_CONFIG, useValue: ROTATION_SCALE_CONFIG }]
 })
 export class RotatePageComponent implements OnInit {
   config: number[] = [];
