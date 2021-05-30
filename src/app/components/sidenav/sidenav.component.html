@@ -24,8 +24,8 @@
     <nav class="flex-grow sm:block px-4 pb-4 sm:pb-0 sm:overflow-y-auto" [class]="{ block: opened, hidden: !opened }">
       <ul>
         <app-sidenav-item
-          *ngFor="let item of sidenavItems"
-          [sidenavItem]="item"
+          *ngFor="let sidenavItem of sidenavItems"
+          [sidenavItem]="sidenavItem"
           (sidenavItemClick)="toggle()"
         ></app-sidenav-item>
       </ul>
