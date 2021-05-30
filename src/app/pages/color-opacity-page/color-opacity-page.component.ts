@@ -1,12 +1,12 @@
-import { COLOR_OPACITY_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
+import { OPACITY_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 
 @Component({
   selector: 'app-color-opacity-page',
   templateUrl: './color-opacity-page.component.html',
   styleUrls: ['./color-opacity-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [{ provide: SCALE_CONFIG, useValue: COLOR_OPACITY_SCALE_CONFIG }]
+  providers: [{ provide: SCALE_CONFIG, useValue: OPACITY_SCALE_CONFIG }]
 })
 export class ColorOpacityPageComponent implements OnInit {
   config: number[] = [];
