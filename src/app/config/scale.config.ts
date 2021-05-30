@@ -15,3 +15,5 @@ export const OPACITY_SCALE_CONFIG = [0, 5, 10, 20, 25, 30, 40, 50, 60, 70, 75, 8
 export const BORDER_SCALE_CONFIG = [0, 2, 4, 6, 8, 10];
 
 export const DIVIDER_SCALE_CONFIG = [0, 2, 4, 6, 8, 10];
+
+export const DURATION_SCALE_CONFIG = [75, 100, 150, 200, 300, 500, 700, 1000, 1200, 1500, 2000, 3000, 5000, 10000];
