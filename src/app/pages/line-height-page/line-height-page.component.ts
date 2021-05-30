@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-line-height-page',
@@ -8,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class LineHeightPageComponent {
   columns: string[] = ['name', 'height'];
-  rows: { [key: string]: any }[] = [
+  rows: TableRow[] = [
     {
       name: 'none',
       height: '1.0'

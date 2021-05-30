@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { ROTATION_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-rotate-page',
@@ -11,7 +12,7 @@ import { ROTATION_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 export class RotatePageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'rotate'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   usageExample = `
   Center(
     child: Row(

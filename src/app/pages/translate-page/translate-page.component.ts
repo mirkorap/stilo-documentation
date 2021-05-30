@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { SCALE_CONFIG, SPACING_SCALE_UNIT, TRANSLATION_SCALE_CONFIG } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-translate-page',
@@ -11,7 +12,7 @@ import { SCALE_CONFIG, SPACING_SCALE_UNIT, TRANSLATION_SCALE_CONFIG } from '@app
 export class TranslatePageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'translate'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   translationTypes: { name: string; translate: string }[] = [
     {
       name: 'translateX',

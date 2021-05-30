@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-table',
@@ -8,5 +9,5 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class TableComponent {
   @Input() columns: string[] = [];
-  @Input() rows: { [key: string]: any }[] = [];
+  @Input() rows: TableRow[] = [];
 }

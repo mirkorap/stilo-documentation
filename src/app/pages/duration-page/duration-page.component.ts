@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { DURATION_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-duration-page',
@@ -11,7 +12,7 @@ import { DURATION_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 export class DurationPageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'duration'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   usageExample = `
   Center(
     child: Row(

@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-font-weight-page',
@@ -8,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class FontWeightPageComponent {
   columns: string[] = ['name', 'weight'];
-  rows: { [key: string]: any }[] = [
+  rows: TableRow[] = [
     {
       name: 'thin',
       weight: '100'

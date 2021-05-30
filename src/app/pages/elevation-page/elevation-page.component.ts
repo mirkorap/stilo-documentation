@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { ELEVATION_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-elevation-page',
@@ -11,7 +12,7 @@ import { ELEVATION_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 export class ElevationPageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'elevation'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   usageExample = `
   Card(
     elevation: StiloElevation.z10,

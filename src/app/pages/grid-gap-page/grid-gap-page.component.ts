@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { SCALE_CONFIG, SPACING_SCALE_CONFIG, SPACING_SCALE_UNIT } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-grid-gap-page',
@@ -11,7 +12,7 @@ import { SCALE_CONFIG, SPACING_SCALE_CONFIG, SPACING_SCALE_UNIT } from '@app/con
 export class GridGapPageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'gap'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   usageExample = `
   GridView.count(
     crossAxisCount: 5,

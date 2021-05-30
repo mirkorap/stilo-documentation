@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { StringTransformService } from '@app/services/string-transform.service';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-border-radius-page',
@@ -9,7 +10,7 @@ import { StringTransformService } from '@app/services/string-transform.service';
 })
 export class BorderRadiusPageComponent implements OnInit {
   columns: string[] = ['name', 'radius'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   radiusTypes: { name: string; radius: number }[] = [
     {
       name: 'none',

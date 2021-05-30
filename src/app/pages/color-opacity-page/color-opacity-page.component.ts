@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { OPACITY_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-color-opacity-page',
@@ -11,7 +12,7 @@ import { OPACITY_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 export class ColorOpacityPageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'opacity'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   usageExample = `
   Center(
     child: Row(

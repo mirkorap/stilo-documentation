@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-font-size-page',
@@ -8,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class FontSizePageComponent {
   columns: string[] = ['name', 'fontsize'];
-  rows: { [key: string]: any }[] = [
+  rows: TableRow[] = [
     {
       name: 'xs',
       fontsize: '9px'

@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { SCALE_CONFIG, SPACING_SCALE_CONFIG, SPACING_SCALE_UNIT } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-width-page',
@@ -11,7 +12,7 @@ import { SCALE_CONFIG, SPACING_SCALE_CONFIG, SPACING_SCALE_UNIT } from '@app/con
 export class WidthPageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'width'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   screenSizeMethods: { name: string; width: string }[] = [
     {
       name: 'oneHalf',

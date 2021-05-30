@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { SCALE_CONFIG, SCALING_SCALE_CONFIG } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-scale-page',
@@ -11,7 +12,7 @@ import { SCALE_CONFIG, SCALING_SCALE_CONFIG } from '@app/config/scale.config';
 export class ScalePageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'scale'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   usageExample = `
   Center(
     child: Row(

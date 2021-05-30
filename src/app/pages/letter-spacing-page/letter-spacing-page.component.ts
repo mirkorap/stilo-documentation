@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-letter-spacing-page',
@@ -8,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class LetterSpacingPageComponent {
   columns: string[] = ['name', 'spacing'];
-  rows: { [key: string]: any }[] = [
+  rows: TableRow[] = [
     {
       name: 'tighter',
       spacing: '-0.6'

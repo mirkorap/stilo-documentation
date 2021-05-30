@@ -1,5 +1,6 @@
 import { BORDER_SCALE_CONFIG, SCALE_CONFIG } from '@app/config/scale.config';
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-border-page',
@@ -11,7 +12,7 @@ import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/cor
 export class BorderPageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'border'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   borderTypes: { name: string; border: string }[] = [
     {
       name: 'all',

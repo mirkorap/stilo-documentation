@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { SCALE_CONFIG, SPACING_SCALE_CONFIG, SPACING_SCALE_UNIT } from '@app/config/scale.config';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-edge-page',
@@ -11,7 +12,7 @@ import { SCALE_CONFIG, SPACING_SCALE_CONFIG, SPACING_SCALE_UNIT } from '@app/con
 export class EdgePageComponent implements OnInit {
   config: number[] = [];
   columns: string[] = ['name', 'edge'];
-  rows: { [key: string]: any }[] = [];
+  rows: TableRow[] = [];
   edgeTypes: { name: string; edge: string }[] = [
     {
       name: 'all',

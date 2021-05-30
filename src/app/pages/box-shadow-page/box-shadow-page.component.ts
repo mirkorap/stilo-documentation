@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TableRow } from '@app/models/table-row.model';
 
 @Component({
   selector: 'app-box-shadow-page',
@@ -8,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class BoxShadowPageComponent {
   columns: string[] = ['name', 'shadow'];
-  rows: { [key: string]: any }[] = [
+  rows: TableRow[] = [
     {
       name: 'xs',
       shadow: '(offset: Offset(0.0, 1.0), blurRadius: 2.0, spreadRadius: 0.0)'
