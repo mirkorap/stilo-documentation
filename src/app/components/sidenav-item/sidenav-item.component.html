@@ -1,0 +1,26 @@
+<li class="mt-8">
+  <h5 class="px-3 mb-3 lg:mb-3 uppercase tracking-wide font-semibold text-sm lg:text-xs text-gray-900">
+    {{ sidenavItem.title }}
+  </h5>
+
+  <ng-container *ngFor="let child of sidenavItem.children">
+    <a
+      *ngIf="!child.externalLink"
+      class="px-3 py-2 transition-colors duration-200 relative block hover:text-green-700 text-gray-500"
+      [routerLink]="child.link"
+      [routerLinkActive]="'bg-green-50 text-green-700'"
+      [routerLinkActiveOptions]="{ exact: true }"
+      (click)="onLinkClick()"
+    >
+      {{ child.title }}
+    </a>
+    <a
+      *ngIf="child.externalLink"
+      class="px-3 py-2 transition-colors duration-200 relative block hover:text-green-700 text-gray-500"
+      target="_blank"
+      [href]="child.link"
+    >
+      {{ child.title }}
+    </a>
+  </ng-container>
+</li>
