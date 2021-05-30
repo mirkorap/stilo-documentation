@@ -10,7 +10,7 @@ import { ColorSwatch } from '@app/models/color-swatch.model';
 export class ColorGridComponent {
   @Input() colorSwatch!: ColorSwatch;
 
-  get colorNames(): string[] {
+  get colorKeys(): string[] {
     return Object.keys(this.colorSwatch);
   }
 }
