@@ -4,7 +4,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-font-size-page',
   templateUrl: './font-size-page.component.html',
-  styleUrls: ['./font-size-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FontSizePageComponent {

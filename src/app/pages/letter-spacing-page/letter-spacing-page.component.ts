@@ -4,7 +4,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-letter-spacing-page',
   templateUrl: './letter-spacing-page.component.html',
-  styleUrls: ['./letter-spacing-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LetterSpacingPageComponent {

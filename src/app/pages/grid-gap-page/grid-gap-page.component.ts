@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-grid-gap-page',
   templateUrl: './grid-gap-page.component.html',
-  styleUrls: ['./grid-gap-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: SPACING_SCALE_CONFIG }]
 })

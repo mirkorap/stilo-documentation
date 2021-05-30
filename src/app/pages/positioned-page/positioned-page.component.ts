@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-positioned-page',
   templateUrl: './positioned-page.component.html',
-  styleUrls: ['./positioned-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: SPACING_SCALE_CONFIG }]
 })

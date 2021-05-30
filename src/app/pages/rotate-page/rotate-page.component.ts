@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-rotate-page',
   templateUrl: './rotate-page.component.html',
-  styleUrls: ['./rotate-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: ROTATION_SCALE_CONFIG }]
 })

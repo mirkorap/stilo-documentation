@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-elevation-page',
   templateUrl: './elevation-page.component.html',
-  styleUrls: ['./elevation-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: ELEVATION_SCALE_CONFIG }]
 })

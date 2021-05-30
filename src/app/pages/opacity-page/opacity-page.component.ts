@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-opacity-page',
   templateUrl: './opacity-page.component.html',
-  styleUrls: ['./opacity-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: OPACITY_SCALE_CONFIG }]
 })

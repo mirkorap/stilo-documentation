@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-border-page',
   templateUrl: './border-page.component.html',
-  styleUrls: ['./border-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: BORDER_SCALE_CONFIG }]
 })

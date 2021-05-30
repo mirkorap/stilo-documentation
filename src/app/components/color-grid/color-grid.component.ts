@@ -4,7 +4,6 @@ import { ColorSwatch } from '@app/models/color-swatch.model';
 @Component({
   selector: 'app-color-grid',
   templateUrl: './color-grid.component.html',
-  styleUrls: ['./color-grid.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ColorGridComponent {

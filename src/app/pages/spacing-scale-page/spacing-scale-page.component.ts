@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-spacing-scale-page',
   templateUrl: './spacing-scale-page.component.html',
-  styleUrls: ['./spacing-scale-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: SPACING_SCALE_CONFIG }]
 })

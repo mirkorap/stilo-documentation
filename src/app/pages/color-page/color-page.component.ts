@@ -4,7 +4,6 @@ import { ColorSwatch } from '@app/models/color-swatch.model';
 @Component({
   selector: 'app-color-page',
   templateUrl: './color-page.component.html',
-  styleUrls: ['./color-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ColorPageComponent {

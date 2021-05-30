@@ -4,7 +4,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-font-weight-page',
   templateUrl: './font-weight-page.component.html',
-  styleUrls: ['./font-weight-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FontWeightPageComponent {

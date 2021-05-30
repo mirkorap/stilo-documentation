@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-duration-page',
   templateUrl: './duration-page.component.html',
-  styleUrls: ['./duration-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: DURATION_SCALE_CONFIG }]
 })

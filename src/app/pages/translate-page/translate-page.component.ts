@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-translate-page',
   templateUrl: './translate-page.component.html',
-  styleUrls: ['./translate-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: TRANSLATION_SCALE_CONFIG }]
 })

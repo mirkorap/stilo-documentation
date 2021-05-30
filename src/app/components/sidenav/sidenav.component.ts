@@ -4,7 +4,6 @@ import { SidenavItem } from '@app/models/sidenav.model';
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidenavComponent {

@@ -4,7 +4,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-box-shadow-page',
   templateUrl: './box-shadow-page.component.html',
-  styleUrls: ['./box-shadow-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BoxShadowPageComponent {

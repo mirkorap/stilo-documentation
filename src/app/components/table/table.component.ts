@@ -4,7 +4,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TableComponent {

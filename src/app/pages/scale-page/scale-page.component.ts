@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-scale-page',
   templateUrl: './scale-page.component.html',
-  styleUrls: ['./scale-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: SCALING_SCALE_CONFIG }]
 })

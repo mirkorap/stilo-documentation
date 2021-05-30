@@ -5,7 +5,6 @@ import { TableRow } from '@app/models/table-row.model';
 @Component({
   selector: 'app-divider-page',
   templateUrl: './divider-page.component.html',
-  styleUrls: ['./divider-page.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{ provide: SCALE_CONFIG, useValue: DIVIDER_SCALE_CONFIG }]
 })
