@@ -2,9 +2,9 @@
 
 Stilo is a utility-first Flutter library that gives you all of the building constants you need to build designs without defining common styles. This project contains the public site about Stilo with some useful examples that explain how the library works and how to use it inside your next Flutter project.
 
-## Usage
+## Library
 
-You can find all usage examples on the official [documentation]()
+You can find the official library of Stilo on [pub.dev](https://pub.dev/packages/stilo)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
