@@ -17,3 +17,5 @@ export const BORDER_SCALE_CONFIG = [0, 2, 4, 6, 8, 10];
 export const DIVIDER_SCALE_CONFIG = [0, 2, 4, 6, 8, 10];
 
 export const DURATION_SCALE_CONFIG = [75, 100, 150, 200, 300, 500, 700, 1000, 1200, 1500, 2000, 3000, 5000, 10000];
+
+export const ROTATE_SCALE_CONFIG = [0, 1, 2, 3, 6, 12, 45, 90, 180];
