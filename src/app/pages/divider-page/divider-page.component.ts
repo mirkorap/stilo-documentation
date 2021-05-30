@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: DIVIDER_SCALE_CONFIG }]
 })
 export class DividerPageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'height'];
   rows: TableRow[] = [];
   usageExample = `
@@ -29,7 +29,7 @@ export class DividerPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.rows = this.config.map((value) => {
-      return { name: `divide${value}`, height: value };
+      return { name: `divide${value}`, height: `${value}px` };
     });
   }
 }

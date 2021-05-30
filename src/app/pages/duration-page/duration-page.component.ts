@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: DURATION_SCALE_CONFIG }]
 })
 export class DurationPageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'duration'];
   rows: TableRow[] = [];
   usageExample = `

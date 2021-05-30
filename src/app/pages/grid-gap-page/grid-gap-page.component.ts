@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: SPACING_SCALE_CONFIG }]
 })
 export class GridGapPageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'gap'];
   rows: TableRow[] = [];
   usageExample = `
@@ -30,8 +30,8 @@ export class GridGapPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.rows = this.config.map((value) => {
-      const size = value * SPACING_SCALE_UNIT;
-      return { name: `gap${value}`, gap: `${size}px` };
+      const spacing = value * SPACING_SCALE_UNIT;
+      return { name: `gap${value}`, gap: `${spacing}px` };
     });
   }
 }

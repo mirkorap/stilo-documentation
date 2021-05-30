@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: SPACING_SCALE_CONFIG }]
 })
 export class SpacingPageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'space'];
   rows: TableRow[] = [];
   spaceTypes: { name: string; space: string }[] = [
@@ -52,9 +52,9 @@ export class SpacingPageComponent implements OnInit {
   ngOnInit(): void {
     this.rows = this.config.flatMap((value) => {
       return this.spaceTypes.map((spaceType) => {
-        const size = value * SPACING_SCALE_UNIT;
+        const spacing = value * SPACING_SCALE_UNIT;
         const name = spaceType.name + value;
-        const space = spaceType.space.replace(/X/g, size.toString());
+        const space = spaceType.space.replace(/X/g, spacing.toString());
         return { name, space };
       });
     });

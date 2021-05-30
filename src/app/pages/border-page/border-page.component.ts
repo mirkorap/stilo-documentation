@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: BORDER_SCALE_CONFIG }]
 })
 export class BorderPageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'border'];
   rows: TableRow[] = [];
   borderTypes: { name: string; border: string }[] = [

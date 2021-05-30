@@ -9,8 +9,8 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: SPACING_SCALE_CONFIG }]
 })
 export class SpacingScalePageComponent implements OnInit {
-  config: number[] = [];
-  columns: string[] = ['name', 'size'];
+  config: number[];
+  columns: string[] = ['name', 'spacing'];
   rows: TableRow[] = [];
 
   constructor(@Inject(SCALE_CONFIG) config: number[]) {
@@ -19,8 +19,8 @@ export class SpacingScalePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.rows = this.config.map((value) => {
-      const size = value * SPACING_SCALE_UNIT;
-      return { name: `space${value}`, size: `${size}px` };
+      const spacing = value * SPACING_SCALE_UNIT;
+      return { name: `space${value}`, spacing: `${spacing}px` };
     });
   }
 }

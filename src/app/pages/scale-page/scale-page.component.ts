@@ -9,8 +9,8 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: SCALING_SCALE_CONFIG }]
 })
 export class ScalePageComponent implements OnInit {
-  config: number[] = [];
-  columns: string[] = ['name', 'scale'];
+  config: number[];
+  columns: string[] = ['name', 'scaling'];
   rows: TableRow[] = [];
   usageExample = `
   Center(
@@ -38,7 +38,7 @@ export class ScalePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.rows = this.config.map((value) => {
-      return { name: `scale${value}`, scale: value };
+      return { name: `scale${value}`, scaling: `${value}%` };
     });
   }
 }

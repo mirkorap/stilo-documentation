@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: SPACING_SCALE_CONFIG }]
 })
 export class EdgePageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'edge'];
   rows: TableRow[] = [];
   edgeTypes: { name: string; edge: string }[] = [
@@ -71,9 +71,9 @@ export class EdgePageComponent implements OnInit {
   ngOnInit(): void {
     this.rows = this.config.flatMap((value) => {
       return this.edgeTypes.map((edgeType) => {
-        const size = value * SPACING_SCALE_UNIT;
+        const spacing = value * SPACING_SCALE_UNIT;
         const name = edgeType.name + value;
-        const edge = edgeType.edge.replace(/X/g, size.toString());
+        const edge = edgeType.edge.replace(/X/g, spacing.toString());
         return { name, edge };
       });
     });

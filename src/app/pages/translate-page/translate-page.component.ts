@@ -9,21 +9,21 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: TRANSLATION_SCALE_CONFIG }]
 })
 export class TranslatePageComponent implements OnInit {
-  config: number[] = [];
-  columns: string[] = ['name', 'translate'];
+  config: number[];
+  columns: string[] = ['name', 'translation'];
   rows: TableRow[] = [];
-  translationTypes: { name: string; translate: string }[] = [
+  translationTypes: { name: string; translation: string }[] = [
     {
       name: 'translateX',
-      translate: 'offset(X, 0)'
+      translation: 'offset(X, 0)'
     },
     {
       name: 'translateY',
-      translate: 'offset(0, X)'
+      translation: 'offset(0, X)'
     },
     {
       name: 'translateXY',
-      translate: 'offset(X, X)'
+      translation: 'offset(X, X)'
     }
   ];
   usageExample = `
@@ -53,10 +53,10 @@ export class TranslatePageComponent implements OnInit {
   ngOnInit(): void {
     this.rows = this.config.flatMap((value) => {
       return this.translationTypes.map((translationType) => {
-        const size = value * SPACING_SCALE_UNIT;
+        const spacing = value * SPACING_SCALE_UNIT;
         const name = translationType.name + value;
-        const translate = translationType.translate.replace(/X/g, size.toString());
-        return { name, translate: translate };
+        const translation = translationType.translation.replace(/X/g, spacing.toString());
+        return { name, translation };
       });
     });
   }

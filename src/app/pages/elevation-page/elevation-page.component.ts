@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: ELEVATION_SCALE_CONFIG }]
 })
 export class ElevationPageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'elevation'];
   rows: TableRow[] = [];
   usageExample = `

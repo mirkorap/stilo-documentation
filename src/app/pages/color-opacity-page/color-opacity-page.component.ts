@@ -9,7 +9,7 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: OPACITY_SCALE_CONFIG }]
 })
 export class ColorOpacityPageComponent implements OnInit {
-  config: number[] = [];
+  config: number[];
   columns: string[] = ['name', 'opacity'];
   rows: TableRow[] = [];
   usageExample = `

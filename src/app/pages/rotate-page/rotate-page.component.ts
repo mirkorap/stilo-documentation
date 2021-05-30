@@ -9,8 +9,8 @@ import { TableRow } from '@app/models/table-row.model';
   providers: [{ provide: SCALE_CONFIG, useValue: ROTATION_SCALE_CONFIG }]
 })
 export class RotatePageComponent implements OnInit {
-  config: number[] = [];
-  columns: string[] = ['name', 'rotate'];
+  config: number[];
+  columns: string[] = ['name', 'rotation'];
   rows: TableRow[] = [];
   usageExample = `
   Center(
@@ -38,7 +38,7 @@ export class RotatePageComponent implements OnInit {
 
   ngOnInit(): void {
     this.rows = this.config.map((value) => {
-      return { name: `rotate${value}`, rotate: `${value}deg` };
+      return { name: `rotate${value}`, rotation: `${value}deg` };
     });
   }
 }
